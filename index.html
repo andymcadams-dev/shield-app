@@ -16,30 +16,42 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
         <link rel="stylesheet" href="css/styles.css" />
     
-        <title>NuCamp: A Better Way To Camp</title>
+        <title>Shield Defense App</title>
     </head>
 </head>
 
 <body>
-
+    
     <header class="jumbotron jumbotron-fluid">
-        <div>
-            <h1>NuCamp</h1>
-            <h2>a better way to camp</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html"><img src="img/plu-logo.png" class="img-fluid" /></a>
+                </div>
+                <div class="col-6">
+                    <h1>S.H.I.E.L.D.</h1>
+                    <h2>Pacific Lutheran University</h2>
+                </div>
+                <div class="col align-self-right">
+                    <button type="submit" class="btn btn-warning .text-light" value="Submit">Start New Game </button>
+                </div>
+            </div>
         </div>
     </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#"><img src="img/plu-logo.png" height="30" width="30" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="statistics.html"><i class="fa fa-bar-chart fa-lg"></i> Statistics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="games.html"><i class="fa fa-list fa-lg"></i> Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="players.html"><i class="fa fa-group fa-lg"></i> Players</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gradesheet.html"><i class="fa fa-pencil-square-o fa-lg"></i>Grade Sheet</a></li>
                 </ul>
             </div>
         </div>
@@ -50,56 +62,65 @@
             <div class="col">
                 <ol class="breadcrumb">
                         <li class="breadcrumb-item active">Home</a></li>
-                        <li class="breadcrumb-item"><a href="aboutus.html"></a>About Us</li>
+                        <li class="breadcrumb-item"><a href="index.html"></a>Home</li>
                 </ol>
                <hr />
             </div>
         </div>
+    </div>
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Discover & Review</h2>
-            </div>
             <div class="col">
-                <h3>Our Campsites</h3>
-                <p class='d-none d-sm-block'>Explore our growing database of curated campsites and leave your own reviews!</p>
+                <div class="media-body align-self-center">
+                    <h3 class="text-sm-left">PLU Defense</h3>
+                    <p class="d-none d-sm-block"></p>
+                </div>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/plu-logo.PNG" alt="Breadcrumb Trail" />
+                    
+                </div>
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h2>Featured Campsites</h2>
-            </div>
-            <div class="col">
-                <h3>React Lake Campground</h3>
-        		<p class='d-none d-sm-block'>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-   			</div>
+        <div class="row row-content">
+            <div class="col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-warning">Start New Game</h3>
+                        <div class="card-body">
+                            <form id="reserveForm">
+                                    <div class="row form-group">
+                                        <label class="col-sm-6 col-form-label" for="numCampers">Opponent</label>
+                                        <div class="col">
+                                            <select class="form-control" id="numCampers" name="numCampers">
+                                                <option value="select">Select...</option>
+                                                <option value="1">California Lutheran Univ</option>
+                                                <option value="2">Univ of La Verne</option>
+                                                <option value="3">George Fox Univ</option>
+                                                <option value="4">Lewis & Clark Univ</option>
+                                                <option value="5">Whitworth Univ</option>
+                                                <option value="6">Linfield Univ</option>
+                                                <option value="6">Willamette Univ</option>
+                                                <option value="6">Univ of Puget Sound</option>
+                                                <option value="6">Pacific Univ</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                <div class="row form-group col-form-label">
+                                    <div class="col">
+                                       <button type="submit" class="btn btn-warning" value="Submit">Start</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>    
+            </div>    
         </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Our Community Partners</h2>
-            </div>
-            <div class="col">
-                <h3>Bootstrap Outfitters</h3>
-        		<p class='d-none d-sm-block'>Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
-            </div>
-        </div>
-    </div>
-
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <div class="row">             
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
-            		<ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
-                    </ul>
-                </div>
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
@@ -108,8 +129,8 @@
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone" ></i> 1-206-555-1234</a><br />
-                    <a role="button" class="btn btn-link"href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                    <a role="button" class="btn" href="tel:+12065551234"><i class="fa fa-phone" ></i> 1-206-555-1234</a><br />
+                    <a role="button" class="btn" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                 </div>              
            </div>
         </div>
