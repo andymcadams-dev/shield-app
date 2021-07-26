@@ -40,16 +40,15 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="nucampNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="statistics.html"><i class="fa fa-bar-chart fa-lg"></i> Statistics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="games.html"><i class="fa fa-list fa-lg"></i> Games</a></li>
-                    <li class="nav-item"><a class="nav-link" href="players.html"><i class="fa fa-group fa-lg"></i> Players</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gradesheet.html"><i class="fa fa-pencil-square-o fa-lg"></i>Grade Sheet</a></li>
-                </ul>
-            </div>
-            </div>
+                <div class="collapse navbar-collapse" id="nucampNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="statistics.html"><i class="fa fa-bar-chart fa-lg"></i> Statistics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="games.html"><i class="fa fa-list fa-lg"></i> Games</a></li>
+                        <li class="nav-item"><a class="nav-link" href="players.html"><i class="fa fa-group fa-lg"></i> Players</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gradesheet.html"><i class="fa fa-pencil-square-o fa-lg"></i>Grade Sheet</a></li>
+                    </ul>
+                </div>
         </div>
     </nav>
 
@@ -62,8 +61,8 @@
                 </ol>
             </div>
         </div>
-            <div class="col-md-10">
-                <form>
+            
+                
 
                     <div class="row row-content">
                         <div class="col mx-auto">
@@ -75,30 +74,26 @@
                                                 <label class="col col-6 col-form-label text-right" for="playNum">Hudl Play #</label>
                                                 <div class="col col-3">
                                                     <input type="text" class="form-control" id="playNum" name="playNum" placeholder="Play Number">
-                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col col-6 col-form-label text-right" for="playNum">Position Group</label>
+                                                <label class="col col-6 col-form-label text-right" for="posGroup">Position Group</label>
                                                 <div class="col col-3">
-                                                    <input type="text" class="form-control" id="playNum" name="playNum" placeholder="Play Number">
-                                                    </select>
+                                                    <input type="text" class="form-control" id="posGroup" name="posGroup" placeholder="Position Group">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
                                                 <label class="col col-6 col-form-label text-right" for="playerName">Player Name / Number</label>
                                                 <div class="col col-3">
                                                     <input type="text" class="form-control" id="playerName" name="playerName" placeholder="Player Name / Number">
-                                                    </select>
+                                                    
                                                 </div>
                                             </div>
-                                                
-                                            </br>
 
                                             <div class="row form-group">
                                                 <div class="col">
                                                     <label class="btn btn-warning">
-                                                    <input type="radio" name="alignment" id="plus" value="plus">Plus
+                                                    <input type="radio" name="alignment" id="alPlus" value="plus">Plus
                                                     </label>
                                                 </div>
                                                 <div class="col">
@@ -106,14 +101,14 @@
                                                 </div>
                                                 <div class="col">
                                                     <label class="btn btn-warning">
-                                                    <input type="radio" name="alignment" id="minus" value="minus">Minus
+                                                    <input type="radio" name="alignment" id="alMinus" value="minus">Minus
                                                     </label>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
                                                 <div class="col">
                                                     <label class="btn btn-warning">
-                                                    <input type="radio" name="assignment" id="plus" value="plus">Plus
+                                                    <input type="radio" name="assignment" id="asPlus" value="plus">Plus
                                                     </label>
                                                 </div>
                                                 <div class="col">
@@ -121,94 +116,80 @@
                                                 </div>
                                                 <div class="col">
                                                     <label class="btn btn-warning">
-                                                    <input type="radio" name="assignment" id="minus" value="minus">Minus
+                                                    <input type="radio" name="assignment" id="asMinus" value="minus">Minus
                                                     </label>
                                                 </div>
                                             </div>
-                                        <div class="row form-group">
-                                            <div class="col">
-                                                <label class="btn btn-warning">
-                                                <input type="radio" name="finish" id="plus" value="plus">Plus
-                                                </label>
-                                            </div>
-                                            <div class="col">
-                                                <h3>FINISH</h3>
-                                            </div>
-                                            <div class="col">
-                                                <label class="btn btn-warning">
-                                                <input type="radio" name="finish" id="minus" value="minus">Minus
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </br>
-                            <div class="container">
-                                <div class='row'>
-                                    <div class="col">
-                                            <h4 class="text-center">Sack</h4>
-                                            <label class="btn btn-secondary active">
-                                                <input type="radio" name="sacks" id="halfSack" checked> .5
-                                            </label>
-                                            <label class="btn btn-secondary">
-                                                <input type="radio" name="sacks" id="wholeSack"> 1
-                                            </label>
-                                        <div class="row">
-                                            <input type="text" class="form-control" id="sackYards" name="sackYards" placeholder="Sack Yards">
-                                            </select>
-                                        </div>
-                                    </div>
-                                        <div class="col">
-                                            <h4 class="text-center">FF</h4>
-                                                <label class="container">
-                                                    <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                                </label>
-                                        </div>
-                                        <div class="col">
-                                            <h4 class="text-center">FR</h4>
-                                                <label class="container">
-                                                    <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                                </label>
-                                            <div class="row">
-                                                <input type="text" class="form-control" id="frYards" name="frYards" placeholder="FR Yards">
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <h4 class="text-center">INT</h4>
-                                                <label class="container">
-                                                    <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>    
-                                                <div class="row">
-                                                    <input type="text" class="form-control" id="intYards" name="intYards" placeholder="INT Yards">
-                                                    </select>
+                                            <div class="row form-group">
+                                                <div class="col">
+                                                    <label class="btn btn-warning">
+                                                    <input type="radio" name="finish" id="finPlus" value="plus">Plus
+                                                    </label>
                                                 </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                <div class="container">
-                                    <div class="row form-group col-form-label">
-                                        <div class="col-4">
-                                           <button type="submit" class="btn bg-secondary text-warning" value="Submit">Add Player</button>
-                                        </div>
-                                    
-                                        <div class= "row form-group col-form-label">
-                                            <div class="col-4">
-                                                <button type="submit" class="btn btn-warning" value="Submit" margin="mx-auto">Save Play</button>
+                                                <div class="col">
+                                                    <h3>FINISH</h3>
+                                                </div>
+                                                <div class="col">
+                                                    <label class="btn btn-warning">
+                                                    <input type="radio" name="finish" id="finMinus" value="minus">Minus
+                                                    </label>
+                                                </div>
                                             </div>
-                                        </div>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h4 class="text-center">SACK</h4>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" id="halfSack" value=".5" />
+                                                            <label class="form-check-label" for="inlineCheckbox1">.5</label>  
+                                                            <input class="form-check-input" type="radio" id="wholeSack" value="1" />
+                                                            <label class="form-check-label" for="inlineCheckbox1">1</label>                                                                                                                                   
+                                                                <input type="text" class="form-control" id="sackYards" name="sackYards" placeholder="Sack Yards">
+                                                        </div>
+                                                    </div>
+                                                        <div class="col">
+                                                            <h4 class="text-center">FF</h4>
+                                                                <label class="container">
+                                                                    <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                                </label>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h4 class="text-center">FR</h4>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="fr" value="FR" />
+                                                                <label class="form-check-label" for="inlineCheckbox1"></label>                                                                                                                                   
+                                                                    <input type="text" class="form-control" id="frYards" name="frYards" placeholder="FR Yards">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h4 class="text-center">INT</h4>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="int" value="INT" />
+                                                                <label class="form-check-label" for="inlineCheckbox1"></label>                                                                                                                                   
+                                                                    <input type="text" class="form-control" id="intYards" name="intYards" placeholder="INT Yards">
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row form-group col-form-label">
+                                                        <div class="col">
+                                                            <button type="submit" class="btn bg-secondary text-warning" value="Submit">Add Player</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <button type="submit" class="btn btn-warning" value="Submit" margin="mx-auto">Save Play</button>
+                                                        </div>
+                                                    </div>
+                                                </div>      
+                                            </div>
+                                        </form>
                                     </div>
-                                </div>
                             </div>
-                        </div>       
+                        </div>
                     </div>
-                 </form>
-        </div>
-    </div>
-</div>
+            </div>
 
     <footer class="site-footer">
         <div class="container">
