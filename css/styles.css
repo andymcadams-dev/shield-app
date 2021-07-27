@@ -43,4 +43,12 @@ header h2 {
     padding: 1em;
 }
 
+.col {
+    border: 2px solid red;
+    border-radius: 5px;
+  }
 
+.btn {
+    margin:auto;
+    display:block;
+}
