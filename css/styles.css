@@ -42,19 +42,5 @@ header h2 {
 .nav-item{
     padding: 1em;
 }
-.buttonNeg {
-    font-size: 20px;
-    padding: 16px;
-    border-radius: 12px;
-    background-color: goldenrod;
-    color:black;
-    border: 2px solid #000000;
-}
-.buttonPos {
-    font-size: 20px;
-    padding: 16px;
-    border-radius: 12px;
-    background-color: goldenrod;
-    color:black;
-    border: 2px solid #000000;
-}
+
+
