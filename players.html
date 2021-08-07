@@ -139,194 +139,200 @@
 
     <div class="container">
         <h2>PLU Football Defense Roster</h2>
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Player.." title="Type in a name">
-    <table id="myTable">
-  <tr class="header">
-    <th>Number</th>
-    <th>Name</th>
-    <th>Last Name</th>
-    <th>Position</th>
-  </tr>
-  <tr>
-    <td>0</td>
-    <td>Giani</td>
-    <td>Lafave</td>
-    <td>DL</td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Tyler</td>
-    <td>Williams</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Regan</td>
-    <td>Divina</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Cheyn</td>
-    <td>Tam-Switzer</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Kord</td>
-    <td>Tuttle</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Max</td>
-    <td>Larson</td>
-    <td>DL</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Michael</td>
-    <td>Gurr</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Nasier</td>
-    <td>Ford</td>
-    <td>DL</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>Colby</td>
-    <td>Rhinelander</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>Layne</td>
-    <td>Deperalta</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>Shaun</td>
-    <td>Kim</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>Kalen</td>
-    <td>White</td>
-    <td>LB</td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td>Jai</td>
-    <td>Alapai</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td>Daniel</td>
-    <td>Hylton</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>14</td>
-    <td>Davyn</td>
-    <td>Waters</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>17</td>
-    <td>Jesse</td>
-    <td>Canda</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>21</td>
-    <td>Connor</td>
-    <td>Chun</td>
-    <td>LB</td>
-  </tr>
-  <tr>
-    <td>22</td>
-    <td>Jared</td>
-    <td>Elwin</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>23</td>
-    <td>Francisco</td>
-    <td>Lugo</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>24</td>
-    <td>Tristan</td>
-    <td>Thomas</td>
-    <td>DL</td>
-  </tr>
-  <tr>
-    <td>26</td>
-    <td>Anthony</td>
-    <td>Vail</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>33</td>
-    <td>Tyler</td>
-    <td>Perpignan</td>
-    <td>LB</td>
-  </tr>
-  <tr>
-    <td>34</td>
-    <td>Ashton</td>
-    <td>Barton</td>
-    <td>LB</td>
-  </tr>
-  <tr>
-    <td>35</td>
-    <td>Kellen</td>
-    <td>Meade</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>36</td>
-    <td>Syi</td>
-    <td>Campbell</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>37</td>
-    <td>Cody</td>
-    <td>Dyche</td>
-    <td>LB</td>
-  </tr>
-  <tr>
-    <td>38</td>
-    <td>Jordan</td>
-    <td>Taff</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>39</td>
-    <td>Aiden</td>
-    <td>Yost</td>
-    <td>DB</td>
-  </tr>
-  <tr>
-    <td>40</td>
-    <td>Eddie</td>
-    <td>Burkhardt</td>
-    <td>LB</td>
-  </tr>
-  <tr>
-    <td>41</td>
-    <td>Benjamin</td>
-    <td>Schultz</td>
-    <td>LB</td>
-  </tr>
+        <table id="myTable">
+            <tr class="header">
+                <th><input type="text" id="numInput" onkeyup="numFunction()" placeholder="Search for Number.." title="Type in a Number"></th>
+                <th><input type="text" id="firstInput" onkeyup="firstFunction()" placeholder="Search for First Name.." title="Type in a name"></th>
+                <th><input type="text" id="lastInput" onkeyup="lastFunction()" placeholder="Search for Last Name.." title="Type in a name"></th>
+                <th><input type="text" id="posInput" onkeyup="posFunction()" placeholder="Search for Position.." title="Type in a name"></th>
+            </tr>
+        
+        <tr class="header">
+            <th>Number</th>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Giani</td>
+            <td>Lafave</td>
+            <td>DL</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tyler</td>
+            <td>Williams</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Regan</td>
+            <td>Divina</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Cheyn</td>
+            <td>Tam-Switzer</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Kord</td>
+            <td>Tuttle</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Max</td>
+            <td>Larson</td>
+            <td>DL</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Michael</td>
+            <td>Gurr</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Nasier</td>
+            <td>Ford</td>
+            <td>DL</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Colby</td>
+            <td>Rhinelander</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Layne</td>
+            <td>Deperalta</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Shaun</td>
+            <td>Kim</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Kalen</td>
+            <td>White</td>
+            <td>LB</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Jai</td>
+            <td>Alapai</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Daniel</td>
+            <td>Hylton</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Davyn</td>
+            <td>Waters</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Jesse</td>
+            <td>Canda</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Connor</td>
+            <td>Chun</td>
+            <td>LB</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Jared</td>
+            <td>Elwin</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Francisco</td>
+            <td>Lugo</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Tristan</td>
+            <td>Thomas</td>
+            <td>DL</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>Anthony</td>
+            <td>Vail</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td>Tyler</td>
+            <td>Perpignan</td>
+            <td>LB</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>Ashton</td>
+            <td>Barton</td>
+            <td>LB</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>Kellen</td>
+            <td>Meade</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td>Syi</td>
+            <td>Campbell</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Cody</td>
+            <td>Dyche</td>
+            <td>LB</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td>Jordan</td>
+            <td>Taff</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td>Aiden</td>
+            <td>Yost</td>
+            <td>DB</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td>Eddie</td>
+            <td>Burkhardt</td>
+            <td>LB</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>Benjamin</td>
+            <td>Schultz</td>
+            <td>LB</td>
+        </tr>
 </table>
     </div>
         
@@ -347,9 +353,9 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-    function myFunction() {
+    function numFunction() {
         var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
+        input = document.getElementById("numInput");
         filter = input.value.toUpperCase();
         table = document.getElementById("myTable");
         tr = table.getElementsByTagName("tr");
@@ -366,6 +372,66 @@
         }
       }
       </script>
+      <script>
+        function firstFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("firstInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[1];
+              if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = "";
+                } else {
+                  tr[i].style.display = "none";
+                }
+              }       
+            }
+          }
+          </script>
+          <script>
+            function lastFunction() {
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("lastInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[2];
+                  if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      tr[i].style.display = "";
+                    } else {
+                      tr[i].style.display = "none";
+                    }
+                  }       
+                }
+              }
+              </script>
+              <script>
+                function posFunction() {
+                    var input, filter, table, tr, td, i, txtValue;
+                    input = document.getElementById("posInput");
+                    filter = input.value.toUpperCase();
+                    table = document.getElementById("myTable");
+                    tr = table.getElementsByTagName("tr");
+                    for (i = 0; i < tr.length; i++) {
+                      td = tr[i].getElementsByTagName("td")[3];
+                      if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                          tr[i].style.display = "";
+                        } else {
+                          tr[i].style.display = "none";
+                        }
+                      }       
+                    }
+                  }
+                  </script>
 </body>
 
 </html>
