@@ -136,11 +136,12 @@
             </div>
         </div>
     </div>
+
     <div class="container">
         <h2>PLU Football Defense Roster</h2>
-
-<table>
-  <tr>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Player.." title="Type in a name">
+    <table id="myTable">
+  <tr class="header">
     <th>Number</th>
     <th>Name</th>
     <th>Last Name</th>
@@ -335,7 +336,6 @@
             <div class="container">
                 <div class="row">             
                     <div class="col-6 col-sm-5 text-center">
-                        <h5>Built By</h5>
                         <a class="btn" href="www.bighighfive.org/"><i class="fa fa-hand-paper-o">BigHighFive</i></a>
                     </div>
                 </div>
@@ -346,7 +346,26 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }       
+        }
+      }
+      </script>
 </body>
 
 </html>
