@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <!--Boostrap CSS-->
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+            
+        <!--Additional CSS must be placed after Bootstrap CSS-->
+        <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+        <link rel="stylesheet" href="/rknfire-css/rknfire.css" />
+        
+        
+    
+<title>RKNFIRE Pitch Tracker</title>
+</head>
+<style>
+   
+    
+</style>
+<head>
+    <meta charset='utf-8' />
+    <title>RKNFIRE</title>
+</head>
+<body>
+        <div className="container">
+            <h1>RKNFIRE</h1>
+            <h3>Pitch Tracker</h3>
+        </div>
+
+    
+    <script src="js/kzone.js"></script>
+</body>
+<table class="table">
+    <thead>
+        <tr>
+            <th colspan="7">KZone Pitch Stats</th>
+        </tr>
+        <tr>
+            <th>
+                Pitches
+            </th>
+            <th>
+                Strikes
+            </th>
+            <th>
+                Balls
+            </th>
+            <th>
+                Bulls Eye
+            </th>
+            <th>
+                Wild Pitches
+            </th>
+        </tr>
+    </thead>
+</table>
+
+<section>
+    <br>
+    <br>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('R1')">R1</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('K1')">K1</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('N1')">N1</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('F1')">F1</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('I1')">I1</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('R1')">R1</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('E1')">E1</button>
+    <br>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('R2')">R2</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('K2')">K2</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('N2')">N2</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('F2')">F2</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('I2')">I2</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('R2')">R2</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('E2')">E2</button>
+    <br>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('R3')">R3</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('K3')">K3</button>
+    <button class="strike" id="strike" type="button" onClick="console.log('N3')">N3</button>
+    <button class="strike" id="strike" type="button" onClick="console.log('F3')">F3</button>
+    <button class="strike" id="strike" type="button" onClick="console.log('I3')">I3</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('R3')">R3</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('E3')">E3</button>
+    <br>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('R4')">R4</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('K4')">K4</button>
+    <button class="strike" id="strike" type="button" onClick="console.log('N4')">N4</button>
+    <button class="bullsEye" id="strike" type="button" onClick="console.log('F4')">F4</button>
+    <button class="strike" id="strike" type="button" onClick="console.log('I4')">I4</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('R4')">R4</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('E4')">E4</button>
+    <br>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('R5')">R5</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('K5')">K5</button>
+    <button class="strike" id="strike" type="button" onClick="console.log('N5')">N5</button>
+    <button class="strike" id="strike" type="button" onClick="console.log('F5')">F5</button>
+    <button class="strike" id="strike" type="button" onClick="console.log('I5')">I5</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('R5')">R5</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('E5')">E5</button>
+    <br>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('R6')">R6</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('K6')">K6</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('N6')">N6</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('F6')">F6</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('I6')">I6</button>
+    <button class="ballInnerRing" id="ball" type="button" onClick="console.log('R6')">R6</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('E6')">E6</button>
+    <br>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('R7')">R7</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('K7')">K7</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('N7')">N7</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('F7')">F7</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('I7')">I7</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('R7')">R7</button>
+    <button class="ballOuterRing" id="ball" type="button" onClick="console.log('E7')">E7</button>
+    <br>
+    <br>
+    <br>
+    <button class="opButton" type="button" onclick="console.log('StartTracking')">Start Tracking</button>  <button class="opButton" type="button" onClick="console.log('EndTracking')">End Tracking</button>
+    
+</section>
+</html>
