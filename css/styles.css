@@ -62,6 +62,7 @@ header h2 {
 }
 
 #comments {
+    border: 5px solid black;
     padding: 2em;
     border-radius: 2px;
 }
@@ -76,10 +77,10 @@ header h2 {
 #card {
     padding: 1em;
     border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    background-color: black;
-    color:goldenrod;
+    border-width: 25px;
+    border-color: goldenrod;
+    background-color: grey;
+    color:black;
 }
 table {
     font-family: arial, sans-serif;
@@ -95,11 +96,11 @@ td, th {
   
 tr:nth-child(even) {
     background-color: #dddddd;
-  }
+}
 
 .page {
-    background-color: black;
+    background-color: grey;
 }
 .card-hidden {
     display: none;
-  }
+}

@@ -1,4 +1,4 @@
-
+//Search Players by Number
     function numFunction() {
         var input, filter, table, tr, td, i, txtValue;
         input = document.getElementById("numInput");
@@ -18,7 +18,7 @@
         }
       }
       
-      
+//Search Players by First Name      
         function firstFunction() {
             var input, filter, table, tr, td, i, txtValue;
             input = document.getElementById("firstInput");
@@ -38,7 +38,7 @@
             }
           }
           
-          
+//Search Players by Last Name          
             function lastFunction() {
                 var input, filter, table, tr, td, i, txtValue;
                 input = document.getElementById("lastInput");
@@ -57,7 +57,7 @@
                   }       
                 }
               }
-              
+//Search Players by Position              
                 function posFunction() {
                     var input, filter, table, tr, td, i, txtValue;
                     input = document.getElementById("posInput");
@@ -76,4 +76,15 @@
                       }       
                     }
                   }
+
+//Function to unhide Player Cards - which will appear to be adding them.
+                  $("#button").on("click", function(e) {
+                    if ($(".card-hidden").length > 0) {
+                       $(".card-hidden").first().slideToggle(function() {
+                         $(this).removeClass("card-hidden");
+                       });
+                    } else {
+                      console.log("No more cards to show.");
+                    }
+                   });
                   
